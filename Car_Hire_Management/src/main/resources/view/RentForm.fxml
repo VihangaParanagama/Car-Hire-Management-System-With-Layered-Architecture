@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="585.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Car_Hire_Management.controller.RentFormController">
+   <children>
+      <Label layoutX="6.0" text="Rent" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="53.0" text="Rent ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="rentIdText" layoutX="92.0" layoutY="53.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="carCategoryComboBox" layoutX="14.0" layoutY="120.0" onAction="#carCategoryOnAction" prefHeight="26.0" prefWidth="120.0" promptText="Car Ctegory" />
+      <Label layoutX="15.0" layoutY="81.0" text="Select The Car Category Frist" textFill="WHITE" />
+      <ComboBox fx:id="carIdComboBox" layoutX="16.0" layoutY="180.0" onAction="#carIdOnAction" prefWidth="150.0" />
+      <Label layoutX="15.0" layoutY="160.0" prefWidth="50.0" text="Car ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="99.0" text="Car Category" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="228.0" prefHeight="20.0" prefWidth="120.0" text="Daily Rental Rate" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dailyRentalRateText" layoutX="162.0" layoutY="228.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="283.0" prefHeight="20.0" prefWidth="120.0" text="Car" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="257.0" prefHeight="20.0" prefWidth="120.0" text="Car Number" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="perDayRentText" layoutX="143.0" layoutY="228.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="carNumberText" layoutX="143.0" layoutY="257.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="carText" layoutX="143.0" layoutY="283.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="carModelText" layoutX="153.0" layoutY="310.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="customerIdComboBox" layoutX="401.0" layoutY="50.0" onAction="#customerIdOnAction" prefWidth="150.0" />
+      <Label layoutX="296.0" layoutY="53.0" text="Customer ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="99.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="123.0" text="NIC" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="10" arcWidth="10" fill="WHITE" height="72.0" layoutX="297.0" layoutY="89.0" opacity="0.27" width="249.0" />
+      <Label fx:id="customerNameText" layoutX="387.0" layoutY="99.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerNICText" layoutX="387.0" layoutY="123.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="10" arcWidth="10" fill="WHITE" height="94.0" layoutX="14.0" layoutY="220.0" opacity="0.27" width="259.0" />
+      <Label layoutX="677.0" layoutY="36.0" text="FromDate" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="676.0" layoutY="71.0" text="To Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="fromDate" layoutX="766.0" layoutY="33.0" onAction="#fromDateOnAction" />
+      <DatePicker fx:id="ToDate" layoutX="766.0" layoutY="68.0" onAction="#toDateOnAction" />
+      <Label layoutX="676.0" layoutY="115.0" text="Total" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalText" layoutX="766.0" layoutY="115.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="629.0" layoutY="150.0" text="Advanced Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="balanceText" layoutX="774.0" layoutY="210.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="684.0" layoutY="210.0" text="Balance" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="advancedPaymentText" layoutX="766.0" layoutY="139.0" onAction="#calculateBalanceinAdvPayment" prefHeight="42.0" prefWidth="175.0" promptText="Advanced Payment Text" style="-fx-background-color: none; -fx-border-color: transparent transparent #fff transparent; -fx-background-insets: 0, 0, 1, 0; -fx-text-fill: #fff; -fx-alignment: center;">
+         <font>
+            <Font name="Poppins" size="14.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="rentTable" layoutX="7.0" layoutY="349.0" onMouseClicked="#rentTableMouseClicked" prefHeight="222.0" prefWidth="1060.0">
+         <columns>
+            <TableColumn fx:id="rentIdColumn" prefWidth="75.0" text="Rent Id" />
+            <TableColumn fx:id="carIdColumn" prefWidth="75.0" text="Car ID" />
+            <TableColumn fx:id="rentedCarColumn" prefWidth="97.60003662109375" text="Car" />
+            <TableColumn fx:id="customeNameColumn" prefWidth="114.40003967285156" text="Customer Name" />
+            <TableColumn fx:id="balanceColumn" prefWidth="145.5999755859375" text="Balance (Rs)" />
+            <TableColumn fx:id="rentedDateColumn" prefWidth="193.60003662109375" text="Rented Date" />
+            <TableColumn fx:id="returnDateColumn" minWidth="0.0" prefWidth="178.39990234375" text="Return Date" />
+            <TableColumn fx:id="returnStatusColumn" prefWidth="254.40008544921875" text="Return Status" />
+         </columns>
+      </TableView>
+      <Button layoutX="679.0" layoutY="293.0" mnemonicParsing="false" onAction="#AddRentButton" prefHeight="42.0" prefWidth="127.0" style="-fx-background-color: #2e86de;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Poppins" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="836.0" layoutY="293.0" mnemonicParsing="false" onAction="#DeleteRentButton" prefHeight="42.0" prefWidth="127.0" style="-fx-background-color: #2e86de;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Poppins" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="33.0" fitWidth="39.0" layoutX="1025.0" layoutY="302.0" onMouseClicked="#clearFillds">
+         <image>
+            <Image url="@icons/clear Button.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="26.0" layoutY="330.0" prefHeight="20.0" prefWidth="458.0" text="Click the raw related to Rent to Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="721.0" layoutY="183.0" prefHeight="20.0" prefWidth="249.0" text="(After entering the payment press the Enter button)" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="585.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Car_Hire_Management.controller.CarCategoryController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="585.0" prefWidth="1078.0">
+         <children>
+            <Label fx:id="categoryIdText" layoutX="169.0" layoutY="77.0" prefHeight="20.0" prefWidth="264.0" textFill="WHITE">
+            <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="categorydText" layoutX="169.0" layoutY="87.0" prefHeight="20.0" prefWidth="264.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="129.0" text="Car Category Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="categoryNameText" layoutX="169.0" layoutY="118.0" prefHeight="42.0" prefWidth="264.0" promptText="Type Car Category" style="-fx-background-color: none; -fx-border-color: transparent transparent #fff transparent; -fx-background-insets: 0, 0, 1, 0; -fx-text-fill: #fff; -fx-alignment: center;">
+               <font>
+                  <Font name="Poppins" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="13.0" layoutY="193.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="531.0" layoutY="129.0" text="Daily Rental Rate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dailyRentalRateText" layoutX="665.0" layoutY="118.0" prefHeight="42.0" prefWidth="264.0" promptText="Type Daily Rental Rate" style="-fx-background-color: none; -fx-border-color: transparent transparent #fff transparent; -fx-background-insets: 0, 0, 1, 0; -fx-text-fill: #fff; -fx-alignment: center;">
+               <font>
+                  <Font name="Poppins" size="14.0" />
+               </font>
+            </TextField>
+            <Button layoutX="14.0" layoutY="272.0" mnemonicParsing="false" onAction="#registerNewCarCategory" prefHeight="41.0" prefWidth="277.0" style="-fx-background-color: #2e86de;" text="Save Category" textFill="WHITE">
+               <font>
+                  <Font name="Poppins" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="345.0" layoutY="272.0" mnemonicParsing="false" onAction="#updateCarCategory" prefHeight="41.0" prefWidth="277.0" style="-fx-background-color: #2e86de;" text="Update Category" textFill="WHITE">
+               <font>
+                  <Font name="Poppins" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="7.0" layoutY="21.0" text="Car Category" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="37.0" layoutX="1026.0" layoutY="304.0" onMouseClicked="#clearFields">
+               <image>
+                  <Image url="@icons/clear Button.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="16.0" layoutY="320.0" prefHeight="20.0" prefWidth="458.0" text="Click the raw related to Customer to Update or Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="904.0" layoutY="320.0" prefHeight="20.0" prefWidth="122.0" text="Click Here To Clear Fields" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TableView fx:id="carCategoryTable" layoutX="159.0" layoutY="351.0" onMouseClicked="#categoryTableMouseClick" opacity="0.75" prefHeight="222.0" prefWidth="760.0">
+               <columns>
+                  <TableColumn fx:id="categoryID" prefWidth="154.39995956420898" text="Category ID" />
+                  <TableColumn fx:id="categoryName" prefWidth="359.20005798339844" text="Category Name" />
+                  <TableColumn fx:id="dailyRentalRate" prefWidth="246.4000244140625" text="Daily Rental Rate" />
+               </columns>
+            </TableView>
+            <Label layoutX="13.0" layoutY="77.0" text="Car Category ID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

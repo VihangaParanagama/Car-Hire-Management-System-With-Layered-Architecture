@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Car_Hire_Management.controller.SummaryFormController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="585.0" prefWidth="1078.0" />
+      <AnchorPane layoutX="15.0" layoutY="10.0" prefHeight="596.0" prefWidth="1078.0">
+         <children>
+            <Label layoutX="7.0" layoutY="6.0" text="Summary" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="154.0" text="Number of registered customers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="605.0" layoutY="213.0" prefHeight="20.0" prefWidth="98.0" text="Cars In a Rent" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="customerNameText" layoutX="173.0" layoutY="120.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalRentText" layoutX="182.0" layoutY="406.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="balanceText" layoutX="727.0" layoutY="183.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="10" arcWidth="10" fill="WHITE" height="179.0" layoutX="15.0" layoutY="93.0" opacity="0.27" width="441.0" />
+            <Label layoutX="665.0" layoutY="183.0" prefHeight="20.0" prefWidth="34.0" text="Cars" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="carCategoriesTotalText" layoutX="727.0" layoutY="154.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="406.0" prefHeight="20.0" prefWidth="140.0" text="Total Rents" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="591.0" layoutY="406.0" text="Earnings of Rent" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalCustomersText" layoutX="291.0" layoutY="154.0" prefHeight="20.0" prefWidth="170.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="536.0" layoutY="436.0" prefHeight="20.0" prefWidth="170.0" text="Earning of Ovedue Rents" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="95.0" text="Customer" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="19.0" layoutY="88.0">
+               <image>
+                  <Image url="@icons/Customer.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="651.0" layoutY="95.0" text="Car" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="599.0" layoutY="154.0" prefHeight="20.0" prefWidth="105.0" text="Car Categories" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="carsTotalText" layoutX="727.0" layoutY="183.0" prefHeight="20.0" prefWidth="129.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="597.0" layoutY="90.0">
+               <image>
+                  <Image url="@icons/Cars.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="10" arcWidth="10" fill="WHITE" height="179.0" layoutX="536.0" layoutY="93.0" opacity="0.27" width="441.0" />
+            <Label fx:id="carInRentText" layoutX="732.0" layoutY="213.0" prefHeight="20.0" prefWidth="129.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="carsTotalText11" layoutX="732.0" layoutY="213.0" prefHeight="20.0" prefWidth="129.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="334.0" text="Rent" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="30.0" layoutY="328.0">
+               <image>
+                  <Image url="@icons/Rent.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="21.0" layoutY="436.0" prefHeight="20.0" prefWidth="140.0" text="OverDue Rents" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalOverdueRentText" layoutX="182.0" layoutY="436.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="660.0" layoutY="334.0" text="Earnings" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="596.0" layoutY="326.0">
+               <image>
+                  <Image url="@icons/Earnings.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="617.0" layoutY="468.0" prefHeight="20.0" prefWidth="86.0" text="Grand Total" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="earningOfRentText" layoutX="722.0" layoutY="406.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="earningOfOverdueText" layoutX="722.0" layoutY="436.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="grandTotal" layoutX="727.0" layoutY="468.0" prefHeight="20.0" prefWidth="140.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="10" arcWidth="10" fill="WHITE" height="179.0" layoutX="536.0" layoutY="326.0" opacity="0.27" width="441.0" />
+            <Rectangle arcHeight="10" arcWidth="10" fill="WHITE" height="179.0" layoutX="15.0" layoutY="326.0" opacity="0.27" width="441.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
